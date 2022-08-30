@@ -131,9 +131,9 @@ function YearPane(props) {
 				{everyTime.year || "每年"}
 			</Radio>
 
-			<Radio style={radioStyle} value={2}>
+			{/* <Radio style={radioStyle} value={2}>
 				{donTAssign || "不指定"}
-			</Radio>
+			</Radio> */}
 
 			<Radio style={radioStyle} value={3}>
 				{aTob.year ? (

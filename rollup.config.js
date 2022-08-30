@@ -9,7 +9,6 @@ import svgr from "@svgr/rollup";
 import image from "@rollup/plugin-image";
 // import typescript2 from 'rollup-plugin-typescript2';
 import { terser } from "rollup-plugin-terser";
-import emitDeclaration from "../../lib/emitDeclaration";
 const fs = require("fs");
 const path = require("path");
 
@@ -50,23 +49,23 @@ export default {
 		postcss({
 			// modules: true,
 			use: [["less", { javascriptEnabled: true }]],
-			plugins: [
-				require("postcss-preset-env")({
-					autoprefixer: {
-						flexbox: "no-2009",
-					},
-					browsers: [
-						">0.15%",
-						"last 4 versions",
-						"Firefox ESR",
-						"not ie < 9", // React doesn't support IE8 anyway
-						"last 3 iOS versions",
-						"iOS 7",
-						"iOS >= 7",
-					],
-					stage: 3,
-				}),
-			],
+			// plugins: [
+			// 	require("postcss-preset-env")({
+			// 		autoprefixer: {
+			// 			flexbox: "no-2009",
+			// 		},
+			// 		browsers: [
+			// 			">0.15%",
+			// 			"last 4 versions",
+			// 			"Firefox ESR",
+			// 			"not ie < 9", // React doesn't support IE8 anyway
+			// 			"last 3 iOS versions",
+			// 			"iOS 7",
+			// 			"iOS >= 7",
+			// 		],
+			// 		stage: 3,
+			// 	}),
+			// ],
 		}),
 		babel({
 			babelrc: false,
@@ -110,7 +109,7 @@ export default {
 						loose: true,
 					},
 				],
-				"react-loadable/babel",
+				// "react-loadable/babel",
 				"babel-plugin-transform-object-assign",
 				["@babel/plugin-proposal-decorators", { legacy: true }],
 				"@babel/plugin-proposal-optional-chaining",

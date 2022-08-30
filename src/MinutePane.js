@@ -126,9 +126,9 @@ function MinutePane(props) {
 			<Radio style={radioStyle} value={1}>
 				{everyTime.minute || "每一分钟"}
 			</Radio>
-			<Radio style={radioStyle} value={5}>
+			{/* <Radio style={radioStyle} value={5}>
 				{donTAssign || "不指定"}
-			</Radio>
+			</Radio> */}
 
 			<Radio style={radioStyle} value={2}>
 				{aTob.minute ? (

@@ -140,9 +140,9 @@ function WeekPane(props) {
 				{everyTime.week || "每一周"}
 			</Radio>
 
-			<Radio style={radioStyle} value={2}>
+			{/* <Radio style={radioStyle} value={2}>
 				{donTAssign || "不指定"}
-			</Radio>
+			</Radio> */}
 
 			<span style={{ display: "flex", alignItems: "center", fontSize: 14 }}>
 				<Radio style={radioStyle} value={3} />

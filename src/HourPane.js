@@ -125,9 +125,9 @@ function HourPane(props) {
 			<Radio style={radioStyle} value={1}>
 				{everyTime.hour || "每一小时"}
 			</Radio>
-			<Radio style={radioStyle} value={5}>
+			{/* <Radio style={radioStyle} value={5}>
 				{donTAssign || "不指定"}
-			</Radio>
+			</Radio> */}
 
 			<Radio style={radioStyle} value={2}>
 				{aTob.hour ? (

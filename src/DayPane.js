@@ -126,9 +126,9 @@ function DayPane(props) {
 				{everyTime.day || "每一日"}
 			</Radio>
 
-			<Radio style={radioStyle} value={2}>
+			{/* <Radio style={radioStyle} value={2}>
 				{donTAssign || "不指定"}
-			</Radio>
+			</Radio> */}
 
 			<Radio style={radioStyle} value={3}>
 				{aTob.day ? (
